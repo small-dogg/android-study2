@@ -8,6 +8,11 @@ android {
     namespace 'com.smalldogg.study.androidstudy2'
     compileSdk 33
 
+    buildFeatures {
+        // 뷰 바인딩 활성화
+        viewBinding true
+    }
+
     defaultConfig {
         applicationId "com.smalldogg.study.androidstudy2"
         minSdk 23
