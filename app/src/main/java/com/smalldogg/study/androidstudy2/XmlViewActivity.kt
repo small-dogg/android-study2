@@ -22,18 +22,22 @@ class XmlViewActivity : AppCompatActivity() {
 
         //View 객체를 생성한다.
         val sub1 = layoutInflater.inflate(R.layout.layout_sub1, null)
+        val sub2 = layoutInflater.inflate(R.layout.layout_sub2, null)
+        val sub3 = layoutInflater.inflate(R.layout.layout_sub3, binding.container1)
 
         sub1.run{
             binding.textView2.text = "sub1의 버튼을 눌렀습니다."
-            binding2.sub1Text.text = "sub1의 버튼을 눌렀습니다."
+            binding2.sub1Text.text = "sub1의 버튼을 눌렀습니다."//뷰 바인딩 어케하는지...
         }
 
         binding.button1.setOnClickListener {
             binding.container1.addView(sub1)
+            binding.container1.addView(sub2)
         }
 
         binding.button2.setOnClickListener {
             binding.container1.removeView(sub1)
+            binding.container1.removeView(sub2)
         }
     }
 }
