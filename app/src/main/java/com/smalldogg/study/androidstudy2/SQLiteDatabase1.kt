@@ -60,9 +60,9 @@ class SQLiteDatabase1 : AppCompatActivity() {
                 //데이터를 추출한다.
                 val idx = c1.getInt(idx1)
                 val textData = c1.getString(idx2)
-                val intData = c1.getInt(idx2)
-                val floatData = c1.getFloat(idx2)
-                val dateData = c1.getString(idx2)
+                val intData = c1.getInt(idx3)
+                val floatData = c1.getFloat(idx4)
+                val dateData = c1.getString(idx5)
                 binding.textView9.append("idx : $idx\n")
                 binding.textView9.append("textData : $textData\n")
                 binding.textView9.append("intData : $intData\n")
