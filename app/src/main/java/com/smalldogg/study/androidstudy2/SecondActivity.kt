@@ -1,7 +1,7 @@
 package com.smalldogg.study.androidstudy2
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import com.smalldogg.study.androidstudy2.databinding.ActivitySecondBinding
 
 class SecondActivity : AppCompatActivity() {

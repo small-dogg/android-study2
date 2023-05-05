@@ -1,14 +1,14 @@
 package com.smalldogg.study.androidstudy2
 
 import android.graphics.Typeface
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import com.smalldogg.study.androidstudy2.databinding.ActivityAssetsBinding
 import java.io.BufferedReader
 import java.io.InputStreamReader
 
 class Assets : AppCompatActivity() {
-    lateinit var binding : ActivityAssetsBinding
+    lateinit var binding: ActivityAssetsBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         binding = ActivityAssetsBinding.inflate(layoutInflater)
         super.onCreate(savedInstanceState)
@@ -20,12 +20,12 @@ class Assets : AppCompatActivity() {
             val br = BufferedReader(isr)
             var str: String? = null
             val sb = StringBuffer()
-            do{
+            do {
                 str = br.readLine()
                 if (str != null) {
                     sb.append("$str\n")
                 }
-            }while(str!=null)
+            } while (str != null)
 
             br.close()
             binding.textView8.text = sb.toString()
@@ -36,12 +36,12 @@ class Assets : AppCompatActivity() {
             val br = BufferedReader(isr)
             var str: String? = null
             val sb = StringBuffer()
-            do{
+            do {
                 str = br.readLine()
                 if (str != null) {
                     sb.append("$str\n")
                 }
-            }while(str!=null)
+            } while (str != null)
 
             br.close()
             binding.textView8.text = sb.toString()

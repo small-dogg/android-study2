@@ -1,11 +1,9 @@
 package com.smalldogg.study.androidstudy2
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
 import com.smalldogg.study.androidstudy2.databinding.ActivityXmlViewBinding
-import com.smalldogg.study.androidstudy2.databinding.LayoutSub1Binding
 
 class XmlViewActivity : AppCompatActivity() {
 
@@ -24,7 +22,7 @@ class XmlViewActivity : AppCompatActivity() {
         val sub2 = layoutInflater.inflate(R.layout.layout_sub2, null)
         val sub3 = layoutInflater.inflate(R.layout.layout_sub3, binding.container1)
 
-        sub1.run{
+        sub1.run {
             val sub1Text = findViewById<TextView>(R.id.sub1_text)
             binding.textView2.text = "sub1의 버튼을 눌렀습니다."
             sub1Text.text = "sub1의 버튼을 눌렀습니다."

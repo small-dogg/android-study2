@@ -6,13 +6,13 @@ import android.database.sqlite.SQLiteOpenHelper
 import android.util.Log
 
 class DBHelper : SQLiteOpenHelper {
-    constructor(context:Context) : super(context, "Test.db", null, 2)
+    constructor(context: Context) : super(context, "Test.db", null, 2)
 
     //데이터베이스 파일이 없을 경우 파일이 만들어지고 자동으로 호출됨
     //어플리케이션 설치 후 최초 접근 시 호출
     //최신 형태의 테이블 생성하는 쿼리문을 작성
     override fun onCreate(db: SQLiteDatabase?) {
-        Log.d("test","데이터베이스가 생성되었습니다.")
+        Log.d("test", "데이터베이스가 생성되었습니다.")
 
         val sql = """
             create table TestTable

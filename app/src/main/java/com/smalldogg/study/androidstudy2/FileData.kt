@@ -2,10 +2,9 @@ package com.smalldogg.study.androidstudy2
 
 import android.content.Context
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.os.Environment
 import android.util.Log
+import androidx.appcompat.app.AppCompatActivity
 import com.smalldogg.study.androidstudy2.databinding.ActivityFileDataBinding
 import java.io.DataInputStream
 import java.io.DataOutputStream
@@ -17,7 +16,7 @@ class FileData : AppCompatActivity() {
     //내부 저장소의 앱 데이터 디렉토리 경로
     lateinit var file_path: String
 
-    private lateinit var binding:ActivityFileDataBinding
+    private lateinit var binding: ActivityFileDataBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
@@ -130,7 +129,7 @@ class FileData : AppCompatActivity() {
                 dos.close()
                 binding.textView6.text = "Downloads 폴더에 저장"
             }
-        }else if (requestCode == 200) {
+        } else if (requestCode == 200) {
             if (resultCode == RESULT_OK) {
                 val des2 = contentResolver.openFileDescriptor(data?.data!!, "r")
                 val fis = FileInputStream(des2?.fileDescriptor)

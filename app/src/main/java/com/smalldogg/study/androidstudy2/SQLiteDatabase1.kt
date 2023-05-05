@@ -1,13 +1,13 @@
 package com.smalldogg.study.androidstudy2
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import com.smalldogg.study.androidstudy2.databinding.ActivitySqliteDatabase1Binding
 import java.text.SimpleDateFormat
 import java.util.*
 
 class SQLiteDatabase1 : AppCompatActivity() {
-    lateinit var binding : ActivitySqliteDatabase1Binding
+    lateinit var binding: ActivitySqliteDatabase1Binding
     override fun onCreate(savedInstanceState: Bundle?) {
 
         binding = ActivitySqliteDatabase1Binding.inflate(layoutInflater)
@@ -27,8 +27,8 @@ class SQLiteDatabase1 : AppCompatActivity() {
             val sdf = SimpleDateFormat("yyyy-MM-dd", Locale.getDefault())
             val now = sdf.format(Date())
 
-            val arg1 = arrayOf("문자열1","100","11.11", now)
-            val arg2 = arrayOf("문자열2","200","22.22", now)
+            val arg1 = arrayOf("문자열1", "100", "11.11", now)
+            val arg2 = arrayOf("문자열2", "200", "22.22", now)
 
             //저장
             helper.writableDatabase.execSQL(sql, arg1)
@@ -79,7 +79,7 @@ class SQLiteDatabase1 : AppCompatActivity() {
                 update TestTable set textData = ? where idx = ?
             """.trimIndent()
 
-            val arg1 = arrayOf("문자열3","1")
+            val arg1 = arrayOf("문자열3", "1")
             helper.writableDatabase.execSQL(sql, arg1)
             helper.writableDatabase.close()
             binding.textView9.text = "수정 완료"
@@ -97,7 +97,6 @@ class SQLiteDatabase1 : AppCompatActivity() {
             helper.writableDatabase.close()
             binding.textView9.text = "삭제 완료"
         }
-
 
 
     }

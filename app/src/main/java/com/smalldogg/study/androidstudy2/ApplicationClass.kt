@@ -1,8 +1,8 @@
 package com.smalldogg.study.androidstudy2
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import com.smalldogg.study.androidstudy2.databinding.ActivityApplicationClassBinding
 
 class ApplicationClass : AppCompatActivity() {

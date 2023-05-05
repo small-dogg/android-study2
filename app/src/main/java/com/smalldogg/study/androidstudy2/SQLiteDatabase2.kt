@@ -1,14 +1,14 @@
 package com.smalldogg.study.androidstudy2
 
 import android.content.ContentValues
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import com.smalldogg.study.androidstudy2.databinding.ActivitySqliteDatabase2Binding
 import java.text.SimpleDateFormat
 import java.util.*
 
 class SQLiteDatabase2 : AppCompatActivity() {
-    lateinit var b : ActivitySqliteDatabase2Binding
+    lateinit var b: ActivitySqliteDatabase2Binding
     override fun onCreate(savedInstanceState: Bundle?) {
         b = ActivitySqliteDatabase2Binding.inflate(layoutInflater)
         super.onCreate(savedInstanceState)
@@ -70,7 +70,7 @@ class SQLiteDatabase2 : AppCompatActivity() {
             val where = "idx = ?"
             val args = arrayOf("1")
 
-            helper.writableDatabase.update("TestTable",cv1, where, args)
+            helper.writableDatabase.update("TestTable", cv1, where, args)
 
             helper.writableDatabase.close()
 
@@ -81,7 +81,7 @@ class SQLiteDatabase2 : AppCompatActivity() {
             val where = "idx = ?"
             val args = arrayOf("1")
 
-            helper.writableDatabase.delete("TestTable",where, args)
+            helper.writableDatabase.delete("TestTable", where, args)
 
             helper.writableDatabase.close()
 

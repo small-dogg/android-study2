@@ -2,18 +2,17 @@ package com.smalldogg.study.androidstudy2
 
 import android.media.MediaPlayer
 import android.net.Uri
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.provider.MediaStore.Video
+import androidx.appcompat.app.AppCompatActivity
 import com.smalldogg.study.androidstudy2.databinding.ActivityRawFileLoaderBinding
 import java.io.BufferedReader
 import java.io.InputStreamReader
 
 class RawFileLoader : AppCompatActivity() {
 
-    var mp:MediaPlayer? = null
+    var mp: MediaPlayer? = null
 
-    lateinit var binding : ActivityRawFileLoaderBinding
+    lateinit var binding: ActivityRawFileLoaderBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -33,7 +32,7 @@ class RawFileLoader : AppCompatActivity() {
                 if (str != null) {
                     sb.append("$str\n")
                 }
-            }while(str != null)
+            } while (str != null)
 
             br.close()
 
@@ -41,7 +40,7 @@ class RawFileLoader : AppCompatActivity() {
         }
 
         binding.button13.setOnClickListener {
-            if(mp == null) {
+            if (mp == null) {
                 mp = MediaPlayer.create(this, R.raw.sample)
                 mp?.start()
             }
@@ -53,7 +52,7 @@ class RawFileLoader : AppCompatActivity() {
             }
         }
         binding.button15.setOnClickListener {
-            if(!binding.videoView.isPlaying){
+            if (!binding.videoView.isPlaying) {
                 val uri = Uri.parse("android.resource://${packageName}/raw/sample2")
                 binding.videoView.setVideoURI(uri)
                 binding.videoView.start()
@@ -61,7 +60,7 @@ class RawFileLoader : AppCompatActivity() {
         }
 
         binding.button16.setOnClickListener {
-            if(binding.videoView.isPlaying){
+            if (binding.videoView.isPlaying) {
                 binding.videoView.stopPlayback()
             }
         }

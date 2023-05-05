@@ -14,7 +14,7 @@ class SubFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
 
-        val view = inflater.inflate(R.layout.fragment_sub,null)
+        val view = inflater.inflate(R.layout.fragment_sub, null)
         return view
     }
 }

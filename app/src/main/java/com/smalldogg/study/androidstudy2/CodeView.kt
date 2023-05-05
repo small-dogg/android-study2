@@ -1,12 +1,10 @@
 package com.smalldogg.study.androidstudy2
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.LinearLayout
-import android.widget.LinearLayout.LayoutParams
+import androidx.appcompat.app.AppCompatActivity
 import com.smalldogg.study.androidstudy2.databinding.ActivityCodeViewBinding
-import com.smalldogg.study.androidstudy2.databinding.ActivityXmlViewBinding
 
 class CodeView : AppCompatActivity() {
 
@@ -24,7 +22,7 @@ class CodeView : AppCompatActivity() {
             LinearLayout.LayoutParams.WRAP_CONTENT,
             LinearLayout.LayoutParams.MATCH_PARENT,
 
-        )
+            )
 
         val btn1 = Button(this)
         btn1.text = "추가된 버튼입니다."
