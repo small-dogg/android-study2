@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="입력요소">
+
+        <EditTextPreference
+            android:defaultValue="안녕하세요"
+            android:key="data1"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="문자열 입력"
+            app:dependency="data2"
+            app:dialogIcon="@android:drawable/ic_menu_agenda"
+            app:icon="@android:drawable/ic_menu_add"
+            app:summary="문자열 입력 요소입니다." />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="data2"
+            android:title="체크박스요소"
+            app:icon="@android:drawable/ic_menu_always_landscape_portrait"
+            app:summary="체크박스요소입니다"
+            app:summaryOff="체크박스 false"
+            app:summaryOn="체크박스 true" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="리스트 요소">
+
+    </PreferenceCategory>
+</PreferenceScreen>
