@@ -26,12 +26,22 @@ class ResultFragment: Fragment() {
 
         val data1 = pref?.getString("data1", null)
 
-        val text : TextView? = getView()?.findViewById(R.id.textView12)
+        val text = view.findViewById<TextView>(R.id.textView14)
 
-        text?.text = "data1 : $data1\n"
+        text.text = "data1 : $data1\n"
 
         val data2 = pref?.getBoolean("data2", false)
         text?.append("data2 : $data2\n")
 
+        val data3 = pref?.getBoolean("data3", false)
+        text?.append("data3 : $data3\n")
+
+        val data4 = pref?.getString("data4", null)
+        text?.append("data4 : $data4\n")
+
+        val data5 = pref?.getStringSet("data5", null)
+        for (str in data5!!) {
+            text.append("data5 : $str\n")
+        }
     }
 }
