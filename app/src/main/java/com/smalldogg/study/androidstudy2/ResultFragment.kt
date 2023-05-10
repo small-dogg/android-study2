@@ -7,7 +7,6 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.preference.PreferenceManager
-import com.smalldogg.study.androidstudy2.databinding.ActivityPreferencesScreenBinding
 
 class ResultFragment: Fragment() {
     override fun onCreateView(
