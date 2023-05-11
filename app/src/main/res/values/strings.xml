@@ -11,7 +11,7 @@
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
 
-    <string-array name="title_list" >
+    <string-array name="title_list">
         <item>항목1</item>
         <item>항목2</item>
         <item>항목3</item>
@@ -25,4 +25,7 @@
         <item>value1</item>
         <item>value3</item>
     </string-array>
+    <string name="str1">안녕하세요</string>
+    <string name="str2">반가워요</string>
+    <string name="str3" formatted="false">%s님, %d살 입니다.</string>
 </resources>
