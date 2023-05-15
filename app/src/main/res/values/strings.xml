@@ -1,15 +1,15 @@
 <resources>
     <string name="app_name">androidstudy2</string>
-    <string name="navigation_drawer_open">Open navigation drawer</string>
-    <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Android Studio</string>
-    <string name="nav_header_subtitle">android.studio@android.com</string>
-    <string name="nav_header_desc">Navigation header</string>
-    <string name="action_settings">Settings</string>
+    <string name="navigation_drawer_open" translatable="false">Open navigation drawer</string>
+    <string name="navigation_drawer_close" translatable="false">Close navigation drawer</string>
+    <string name="nav_header_title" translatable="false">Android Studio</string>
+    <string name="nav_header_subtitle" translatable="false">android.studio@android.com</string>
+    <string name="nav_header_desc" translatable="false">Navigation header</string>
+    <string name="action_settings" translatable="false">Settings</string>
 
-    <string name="menu_home">Home</string>
-    <string name="menu_gallery">Gallery</string>
-    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_home" translatable="false">Home</string>
+    <string name="menu_gallery" translatable="false">Gallery</string>
+    <string name="menu_slideshow" translatable="false">Slideshow</string>
 
     <string-array name="title_list">
         <item>항목1</item>
@@ -25,7 +25,8 @@
         <item>value1</item>
         <item>value3</item>
     </string-array>
-    <string name="str1">안녕하세요</string>
-    <string name="str2">반가워요</string>
-    <string name="str3" formatted="false">%s님, %d살 입니다.</string>
+    <string name="str1" translatable="false">안녕하세요</string>
+    <string name="str2" translatable="false">반가워요</string>
+    <string name="str3" formatted="false" translatable="false">%s님, %d살 입니다.</string>
+    <string name="str4">English</string>
 </resources>
