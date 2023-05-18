@@ -13,8 +13,9 @@
         android:theme="@style/Theme.Androidstudy2"
         tools:targetApi="31">
         <activity
-            android:name=".Resolution"
-            android:exported="true">
+            android:name=".Rotation"
+            android:exported="true"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -22,9 +23,11 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".Resolution"
+            android:exported="true"/>
+        <activity
             android:name=".Localization"
-            android:exported="true">
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".NinePatchImage"
             android:exported="true" />
