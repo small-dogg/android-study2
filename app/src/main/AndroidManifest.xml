@@ -17,7 +17,7 @@
         android:theme="@style/Theme.Androidstudy2"
         tools:targetApi="31">
         <activity
-            android:name=".SensorList"
+            android:name=".Sensor1"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -26,12 +26,15 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".SensorList"
+            android:exported="true" />
+        <activity
             android:name=".DeviceInfo"
-            android:exported="true"/>
+            android:exported="true" />
         <activity
             android:name=".Rotation"
             android:exported="true"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".Resolution"
             android:exported="true" />

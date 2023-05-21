@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Sensor1">
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <Button
+        android:id="@+id/button47"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="조도 센서 on" />
+
+    <Button
+        android:id="@+id/button48"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="조도 센서 off" />
+
+    <Button
+        android:id="@+id/button49"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="기압 센서 읽어오기" />
+
+    <Button
+        android:id="@+id/button50"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="기압 센서 연결 해제" />
+
+    <Button
+        android:id="@+id/button51"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="근접 센서 읽어오기" />
+
+    <Button
+        android:id="@+id/button52"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="근접 센서 연결 해제" />
+
+    <Button
+        android:id="@+id/button53"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="자이로스코프 읽어오기" />
+
+    <Button
+        android:id="@+id/button54"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="자이로스코프 연결해제" />
+</LinearLayout>
