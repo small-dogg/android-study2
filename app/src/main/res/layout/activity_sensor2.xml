@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Sensor2">
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <Button
+        android:id="@+id/button55"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="가속도 센서 읽어오기" />
+
+    <Button
+        android:id="@+id/button56"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="가속도 센서 연결 해제" />
+
+    <Button
+        android:id="@+id/button57"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="자기장 값 읽어오기" />
+
+    <Button
+        android:id="@+id/button58"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="자기장 연결 해제" />
+</LinearLayout>
