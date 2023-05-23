@@ -21,14 +21,14 @@ class Sensor2 : AppCompatActivity() {
             override fun onSensorChanged(event: SensorEvent?) {
                 when (event?.sensor?.type) {
                     Sensor.TYPE_ACCELEROMETER ->{
-                        b.textView24.text = "X 축 기울기 : ${event?.values!![0]}"
-                        b.textView25.text = "Y 축 기울기 : ${event?.values!![1]}"
-                        b.textView26.text = "Z 축 기울기 : ${event?.values!![2]}"
+                        b.textView24.text = "X 축 기울기 : ${event.values[0]}"
+                        b.textView25.text = "Y 축 기울기 : ${event.values[1]}"
+                        b.textView26.text = "Z 축 기울기 : ${event.values[2]}"
                     }
                     Sensor.TYPE_MAGNETIC_FIELD -> {
-                        b.textView24.text = "X 축 주변 자기장 : ${event?.values!![0]}"
-                        b.textView25.text = "Y 축 주변 자기장 : ${event?.values!![1]}"
-                        b.textView26.text = "Z 축 주변 자기장 : ${event?.values!![2]}"
+                        b.textView24.text = "X 축 주변 자기장 : ${event.values[0]}"
+                        b.textView25.text = "Y 축 주변 자기장 : ${event.values[1]}"
+                        b.textView26.text = "Z 축 주변 자기장 : ${event.values[2]}"
                     }
                 }
             }
