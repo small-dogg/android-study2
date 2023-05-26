@@ -5,6 +5,8 @@
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.READ_SMS" />
     <uses-permission android:name="android.permission.READ_PHONE_NUMBERS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
     <application
         android:name=".AppClass"
@@ -17,7 +19,7 @@
         android:theme="@style/Theme.Androidstudy2"
         tools:targetApi="31">
         <activity
-            android:name=".Orientation"
+            android:name=".GPS"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -26,10 +28,13 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".Orientation"
+            android:exported="true">
+        </activity>
+        <activity
             android:name=".Sensor2"
             android:exported="true"
-            android:screenOrientation="portrait">
-        </activity>
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name=".Sensor1"
             android:exported="true" />
